@@ -1,0 +1,46 @@
+{
+  "applicationId": "js.neutralino.zero",
+  "version": "1.0.0",
+  "defaultMode": "window",
+  "documentRoot": "/launcher/dist/",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "nativeAllowList": [
+    "app.*",
+    "clipboard.*",
+    "computer.*",
+    "debug.*",
+    "events.*",
+    "extensions.*",
+    "filesystem.*",
+    "init.*",
+    "os.*",
+    "storage.*",
+    "updater.*",
+    "window.*"
+  ],
+  "modes": {
+    "window": {
+      "title": "launcher",
+      "width": 800,
+      "height": 500,
+      "minWidth": 400,
+      "minHeight": 200,
+      "icon": "/launcher/public/favicon.ico",
+      "enableInspector":true
+    }
+  },
+  "cli": {
+    "binaryName": "launcher",
+    "resourcesPath": "/launcher/dist/",
+    "extensionsPath": "/extensions/",
+    "clientLibrary": "/launcher/public/neutralino.js",
+    "binaryVersion": "4.3.0",
+    "clientVersion": "3.2.0",
+    "frontendLibrary": {
+      "patchFile":"/launcher/public/index.html",
+      "devUrl":"http://localhost:8080"
+    }
+  }
+}
